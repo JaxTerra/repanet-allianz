@@ -36,7 +36,7 @@
         <div class="row text-center mt--1">
             <div class="col"></div>
             <div class="col-10">
-                <h3>A building renovation company specialising in storm and catastrophe response management for property damage. </h3>
+                <h3 class="">A company specialising in storm and catastrophe response management and property damage and renovation.</h3>
                 <blockquote> “Our business is all about people and providing solutions”</blockquote>
             </div>
             <div class="col"></div>

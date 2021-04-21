@@ -90,7 +90,7 @@ h6,
 .h5,
 .h6 {
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-  color: #252525;
+  color: #000;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
   margin-top: 0;
@@ -4130,7 +4130,7 @@ hr {
 }
 .lead {
   font-weight: 400;
-  color: #808080;
+  color: #000;
 }
 .lead:not(:last-child) {
   margin-bottom: 1.36842105263158em;
