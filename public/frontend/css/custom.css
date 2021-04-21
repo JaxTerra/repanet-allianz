@@ -1,0 +1,32 @@
+/*! Place your custom styles here */
+
+
+.text-black{
+    color: #000000!important;
+}
+
+.text-purple{
+    color: #B88FED!important;
+}
+
+.icon-width-13{
+    width: 13%!important;
+}
+
+.bg--gradient{
+    background: hsla(254, 88%, 19%, 1);
+
+    background: linear-gradient(90deg, hsla(254, 88%, 19%) 0%, hsla(266, 72%, 75%) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(254, 88%, 19%) 0%, hsla(266, 72%, 75%) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(254, 88%, 19%) 0%, hsla(266, 72%, 75%) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b88fed", endColorstr="#1A065B", GradientType=1 );
+}
+
+.bg--image {
+    background: url(https://media.istockphoto.com/photos/grey-textured-background-picture-id1154378714) rgb(10 15 29 / 90%);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
