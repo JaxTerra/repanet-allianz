@@ -6,21 +6,6 @@
 
 @section('content')
 
-    {{--<section class="space--xxs bg--image">
-
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-md-1"></div>
-                <div class="col">
-                    <img alt="background" src="{{asset('images/repa2.jpeg')}}">
-                </div>
-                <div class="col-md-1"></div>
-
-            </div>
-        </div>
-    </section>--}}
-
     <section class="cover height-80 imagebg text-center parallax" data-overlay="3">
         <div class="background-image-holder"> <img alt="background" src="{{asset('images/repa2.jpeg')}}"> </div>
         <div class="container pos-vertical-center">
@@ -91,7 +76,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Mail-3"></i>
+                        <img alt="roofing image" src="{{asset('images/roofing.jpeg')}}">
                         <h4>Roofing</h4>
                         <p class="mw-100">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -105,7 +90,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Air-Balloon"></i>
+                        <img alt="Cabinet Making" src="{{asset('images/cabinetmaking.jpeg')}}">
                         <h4>Cabinet making</h4>
                         <p class="mw-100">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -121,7 +106,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Mail-3"></i>
+                        <img alt="plumbing" src="{{asset('images/plumbing.jpeg')}}">
                         <h4>Plumbers</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -135,7 +120,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Air-Balloon"></i>
+                        <img alt="electrical" src="{{asset('images/electrical.jpeg')}}">
                         <h4>Electrical</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -149,39 +134,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Bacteria"></i>
-                        <h4>Rubbish / Debris removal</h4>
+                        <img alt="painting" src="{{asset('images/painting.jpeg')}}">
+                        <h4>Painting</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="#">
-                            Learn More
-                        </a>
-                    </div>
-                    <!--end feature-->
-                </div>
-            </div>
-            <div class="row mt--1">
-                <div class="col-md-6">
-                    <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Mail-3"></i>
-                        <h4>Tree removal/cutdown services</h4>
-                        <p class="mw-100">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="#">
-                            Learn More
-                        </a>
-                    </div>
-                    <!--end feature-->
-                </div>
-                <div class="col-md-6">
-                    <div class="feature feature-3 boxed boxed--lg boxed--border">
-                        <i class="icon icon--lg icon-Air-Balloon"></i>
-                        <h4>Emergency Tarp installation</h4>
-                        <p class="mw-100">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
                         </p>
