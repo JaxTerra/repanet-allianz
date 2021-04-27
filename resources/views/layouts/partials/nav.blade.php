@@ -5,8 +5,8 @@
                 <div class="row">
                     <div class="col-3 col-md-2">
                         <a href="{{url('/')}}">
-                            <img class="logo logo-dark" alt="logo" src="{{asset('logos/logo_thin.png')}}">
-                            <img class="logo logo-light" alt="logo" src="{{asset('logos/logo_thin.png')}}">
+                            <img class="logo logo-dark" alt="logo" src="{{asset('logos/REPANET_Logo-1-remove-bg.png')}}">
+                            <img class="logo logo-light" alt="logo" src="{{asset('logos/REPANET_Logo-1-remove-bg.png')}}">
                         </a>
                     </div>
                     <div class="col-9 col-md-10 text-right">
@@ -21,7 +21,7 @@
                     <div class="col-lg-2 text-center text-left-sm hidden-xs order-lg-2">
                         <div class="bar__module">
                             <a href="{{url('/')}}">
-                                <img class="logo" alt="logo" src="{{asset('logos/logo_thin.png')}}">
+                                <img class="logo" alt="logo" src="{{asset('logos/REPANET_Logo-1-remove-bg.png')}}">
                             </a>
                         </div>
                     </div>
