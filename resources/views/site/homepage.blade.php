@@ -74,7 +74,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
                         <img alt="roofing image" src="{{asset('images/roofing.jpeg')}}">
                         <h4>Roofing</h4>
@@ -88,10 +88,24 @@
                     </div>
                     <!--end feature-->
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
                         <img alt="Cabinet Making" src="{{asset('images/cabinetmaking.jpeg')}}">
                         <h4>Cabinet making</h4>
+                        <p class="mw-100">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#">
+                            Learn More
+                        </a>
+                    </div>
+                    <!--end feature-->
+                </div>
+                <div class="col-md-4">
+                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                        <img alt="Cabinet Making" src="{{asset('images/building.jpeg')}}">
+                        <h4>Building</h4>
                         <p class="mw-100">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
@@ -107,7 +121,7 @@
                 <div class="col-md-4">
                     <div class="feature feature-3 boxed boxed--lg boxed--border">
                         <img alt="plumbing" src="{{asset('images/plumbing.jpeg')}}">
-                        <h4>Plumbers</h4>
+                        <h4>Plumbing</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
