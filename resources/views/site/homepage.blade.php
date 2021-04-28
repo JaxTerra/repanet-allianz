@@ -47,7 +47,7 @@
         <div class="row text-center mt--1 mb--1">
             <div class="col"></div>
             <div class="col-10">
-                <p class="lead">REPANET is just that, a repair network of licensed trades all committed to providing solutions,
+                <p class="lead">REPANET is a repair network of licensed trades all committed to providing solutions,
                     managed under one company. Specialists in storm response management and repairs from years of
                     experience of working with clients and insurance companies alike.
                 </p>
