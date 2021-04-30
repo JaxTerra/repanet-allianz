@@ -9,6 +9,7 @@
     @include('site.partials.landing')
     @include('site.partials.textBelowFold')
     @include('site.partials.servicesOverview')
+    @include('site.partials.serviceText')
     @include('site.partials.contact')
 
 @endsection
