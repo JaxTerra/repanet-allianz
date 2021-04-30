@@ -72,11 +72,11 @@
                             </ul>
                         </div>
                     </div>
-                    {{--<div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
+                    <div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
                         <div class="bar__module">
                             <div class="modal-instance">
-                                <a class="btn btn--sm  modal-trigger" href="#">
-                                    <span class="btn__text">
+                                <a class="btn btn--sm  modal-trigger " href="#">
+                                    <span class="btn__text ">
                                         Request a Quote
                                     </span>
                                 </a>
@@ -87,11 +87,11 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-6 col-12 ">
                                                         <div class="feature feature-1 text-center">
-                                                            <img alt="Logo Strip" src="{{asset('logos/logo_strip.png')}}" />
-                                                            <div class="feature__body boxed boxed--lg boxed--border  bg--gradient">
+                                                            <img alt="Logo Strip" class="bg--white" src="{{asset('logos/REPANET_Logo-1-remove-bg.png')}}" />
+                                                            <div class="feature__body boxed boxed--lg boxed--bordert">
                                                                 <div class="modal-close modal-close-cross"></div>
                                                                 <div class="text-block">
-                                                                    <h3 class="color--white type--bold">Request a Quote</h3>
+                                                                    <h2 class="text-black type--bold">Request a Quote</h2>
                                                                 </div>
                                                                 <form action="#"
                                                                       data-success="Thanks for signing up.  Please check your inbox for a confirmation email."
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>--}}
+                    </div>
                 </div>
             </div>
         </nav>
