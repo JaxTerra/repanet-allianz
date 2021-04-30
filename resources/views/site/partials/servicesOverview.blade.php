@@ -1,4 +1,4 @@
-<section class="text-center">
+<section class="text-center bg--dark">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

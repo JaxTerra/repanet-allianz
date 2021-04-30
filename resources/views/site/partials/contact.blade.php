@@ -1,4 +1,4 @@
-<section class="text-center">
+<section class="text-center bg--dark">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7 boxed boxed--border">
