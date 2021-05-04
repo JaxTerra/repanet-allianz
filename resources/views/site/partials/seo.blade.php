@@ -10,4 +10,4 @@
 <meta property="og:description" content=""/>
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ url()->current() }}"/>
-<meta property="og:image" content="{{asset('logos/repanet_seo_image.png')}}" />
+<meta property="og:image" content="{{asset('logos/repanet_seo_branding_image.png')}}" />
