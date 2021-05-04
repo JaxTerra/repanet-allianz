@@ -42,11 +42,7 @@
             <div class="col"></div>
             <div class="col-10">
                 <h3 class="type--bold">Property Repairs & Maintenance</h3>
-                <h4 class="type--bold">Interior and Exterior Maintenance</h4>
-                <p class="lead">Whether it's deck maintenance, termite damage or door replacement, Maintrade can help
-                    you out when things start falling to pieces.  Sometimes there is more damage than meets the eye and
-                    with our knowledge and expertise we can find it and fix it fast.
-                </p>
+                <h4 class="type--bold">Interior and Exterior</h4>
             </div>
             <div class="col"></div>
         </div>
