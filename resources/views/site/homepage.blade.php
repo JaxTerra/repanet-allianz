@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('seo')
-
+    @include('site.partials.seo')
 @endsection
 
 @section('content')
