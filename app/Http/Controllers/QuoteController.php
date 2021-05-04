@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\QuoteDataTable;
+use App\Mail\QuoteSent;
 use App\Models\Quote;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class QuoteController extends Controller
 {
@@ -12,9 +15,10 @@ class QuoteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(QuoteDataTable $dataTable, Request $request)
     {
-        //
+        return $dataTable->render('admin.quotes.index');
+
     }
 
     /**
@@ -24,7 +28,7 @@ class QuoteController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -33,9 +37,13 @@ class QuoteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Quote $quote)
     {
-        //
+        $this->_save($request, $quote);
+
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new QuoteSent($quote));
+
+        return redirect()->route('homepage')->with('success', 'Message sent successfully!');
     }
 
     /**
@@ -78,8 +86,33 @@ class QuoteController extends Controller
      * @param  \App\Models\Quote  $quote
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Quote $quote)
+    public function destroy(Request $request, $id)
     {
-        //
+        $model = Quote::find($id);
+        if ($model) {
+            $model->delete();
+        }
+        if ($request->ajax()) {
+            return response()->json(true);
+        } else {
+            return redirect('/quotes');
+        }
+    }
+
+    protected function _validate($request, $id = null)
+    {
+        $this->validate($request, [
+            'name' => "required",
+            'email' => "required|email",
+            'message' => "required",
+            'service' => 'required',
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
+    }
+
+    protected function _save($request, $model)
+    {
+        $model->fill($request->except(['_token']));
+        $model->save();
     }
 }

@@ -1,9 +1,10 @@
-<section class="text-center bg--dark">
+<section class="text-center bg--dark" id="contact">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7 boxed boxed--border">
                 <h3 class="mb-0">Contact Us</h3>
-                <form class="text-left form-email row mx-0"
+                <form id="contact-form"
+                      class="text-left form-email row mx-0"
                       data-success="Thanks for your enquiry, we'll be in touch shortly."
                       data-error="Please fill in all fields correctly."
                       method="POST"

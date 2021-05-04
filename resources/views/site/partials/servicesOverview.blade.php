@@ -1,4 +1,4 @@
-<section class="text-center bg--dark">
+<section class="text-center bg--dark" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

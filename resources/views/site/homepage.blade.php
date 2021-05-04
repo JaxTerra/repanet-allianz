@@ -14,3 +14,14 @@
     @include('site.partials.contact')
 
 @endsection
+
+@push('scripts')
+    <script>
+        $(function () {
+            $('#contact-form').on('submit', function () {
+                let $form = $(this);
+                $form.find(':submit').text('Processing...').addClass('btn--loading');
+            });
+        });
+    </script>
+@endpush

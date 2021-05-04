@@ -1,4 +1,4 @@
-<section class="">
+<section class="" id="about">
     <div class="container">
         <div class="row text-center mt--1">
             <div class="col"></div>

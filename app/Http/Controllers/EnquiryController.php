@@ -43,7 +43,7 @@ class EnquiryController extends Controller
 
         Mail::to(env('MAIL_FROM_ADDRESS'))->send(new EnquirySent($enquiry));
 
-        return redirect()->route('contact')->with('success', 'Message sent successfully!');
+        return redirect()->route('homepage')->with('success', 'Message sent successfully!');
     }
 
     /**
@@ -86,9 +86,17 @@ class EnquiryController extends Controller
      * @param  \App\Models\Enquiry  $enquiry
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Enquiry $enquiry)
+    public function destroy(Request $request, $id)
     {
-        //
+        $model = Enquiry::find($id);
+        if ($model) {
+            $model->delete();
+        }
+        if ($request->ajax()) {
+            return response()->json(true);
+        } else {
+            return redirect('/enquiries');
+        }
     }
 
     protected function _validate($request, $id = null)

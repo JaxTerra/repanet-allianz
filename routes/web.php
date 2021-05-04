@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\EnquiryController;
 
 /*
@@ -21,6 +22,8 @@ Route::get('/', [SiteController::class, 'homepage'])
 
 Route::post('/contact-send', [EnquiryController::class, 'store'])
     ->name('contact.send');
+Route::post('/quote-send', [QuoteController::class, 'store'])
+    ->name('quote.send');
 
 Route::middleware(['auth'])
     ->group(function () {
@@ -29,5 +32,6 @@ Route::middleware(['auth'])
 
         Route::resources([
             'enquiries' => EnquiryController::class,
+            'quotes' => QuoteController::class,
         ]);
     });

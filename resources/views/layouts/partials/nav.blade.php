@@ -34,40 +34,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('about')}}">
+                                    <a href="{{url('/#about')}}">
                                         About
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('contact')}}">
-                                        Contact
+                                    <a href="{{url('/#services')}}">
+                                        Services
                                     </a>
                                 </li>
-                                <li class="dropdown">
-                                    <span class="dropdown__trigger">
-                                        Services
-                                    </span>
-                                    <div class="dropdown__container">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="dropdown__content col-lg-2">
-                                                    <ul class="menu-vertical">
-                                                        <li>
-                                                            <a href="{{url('/services/landscaping')}}">
-                                                                Landscaping
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="{{url('/services/shop-fitting')}}">
-                                                                Shop Fitting
-                                                            </a>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <li>
+                                    <a href="{{url('/#contact')}}">
+                                        Contact
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -93,22 +72,42 @@
                                                                 <div class="text-block">
                                                                     <h2 class="text-black type--bold">Request a Quote</h2>
                                                                 </div>
-                                                                <form action="#"
-                                                                      data-success="Thanks for signing up.  Please check your inbox for a confirmation email."
-                                                                      data-error="Please check errors">
-                                                                    <input class="validate-required"
-                                                                           type="text"
-                                                                           name="NAME"
-                                                                           placeholder="Your Name" />
-                                                                    <input class="validate-required validate-email mb-5"
-                                                                           type="email"
-                                                                           name="EMAIL"
-                                                                           placeholder="Email Address" />
-                                                                    @captcha
-                                                                    <button type="submit"
-                                                                            class="btn btn--primary type--uppercase mt-5">
-                                                                        Submit
-                                                                    </button>
+                                                                <form id="quote-form"
+                                                                      class="text-left form-email row mx-0"
+                                                                      data-success="Thanks for your enquiry, we'll be in touch shortly."
+                                                                      data-error="Please fill in all fields correctly."
+                                                                      method="POST"
+                                                                      action="{{url('quote-send')}}">
+                                                                    @csrf
+                                                                    <div class="col-md-6">
+                                                                        <label class="type--bold">Your Name:</label>
+                                                                        <input type="text" name="name" class="validate-required">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label class=" type--bold">Email Address:</label>
+                                                                        <input type="email" name="email" class="validate-required validate-email">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label class=" type--bold">Service Required:</label>
+                                                                        <select id="service" name="service" form="quote-form">
+                                                                            <option value="roofing">Roofing</option>
+                                                                            <option value="building">Building</option>
+                                                                            <option value="cabinetmaking">Cabinet Making</option>
+                                                                            <option value="plumbing">Plumbing</option>
+                                                                            <option value="electrical">Electrical</option>
+                                                                            <option value="painting">Painting</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <label class=" type--bold">Message:</label>
+                                                                        <textarea rows="6" name="message" class="validate-required"></textarea>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xs-6 mt--1">
+                                                                        @captcha
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xs-6 pull-right mt--1">
+                                                                        <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button>
+                                                                    </div>
                                                                 </form>
                                                             </div>
                                                         </div>
