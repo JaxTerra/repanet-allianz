@@ -3,7 +3,7 @@
     <div class="container pos-vertical-center">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="fw700"> Commercial - Insurance - Residential</h1>
+                <h1 class="fw700">Our business is all about people and providing solutions</h1>
             </div>
         </div>
     </div>
