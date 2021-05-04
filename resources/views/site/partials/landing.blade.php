@@ -1,4 +1,4 @@
-<section class="cover height-80 imagebg text-center parallax" data-overlay="3">
+<section class="cover height-80 imagebg text-center" data-overlay="3">
     <div class="background-image-holder"> <img alt="background" src="{{asset('images/repa2.jpeg')}}"> </div>
     <div class="container pos-vertical-center">
         <div class="row">
