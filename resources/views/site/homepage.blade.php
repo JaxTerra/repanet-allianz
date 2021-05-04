@@ -22,6 +22,11 @@
                 let $form = $(this);
                 $form.find(':submit').text('Processing...').addClass('btn--loading');
             });
+
+            $('#quote-form').on('submit', function () {
+                let $form = $(this);
+                $form.find(':submit').text('Processing...').addClass('btn--loading');
+            });
         });
     </script>
 @endpush
