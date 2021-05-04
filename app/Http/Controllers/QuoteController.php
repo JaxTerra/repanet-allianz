@@ -43,6 +43,10 @@ class QuoteController extends Controller
 
         Mail::to(env('MAIL_FROM_ADDRESS'))->send(new QuoteSent($quote));
 
+        if ($request->ajax()) {
+            return response()->json(200);
+        }
+
         return redirect()->route('homepage')->with('success', 'Message sent successfully!');
     }
 
