@@ -1,4 +1,4 @@
-<section class="">
+<section class="" id="service-text">
     <div class="container">
         <div class="row text-center mt--1 mb--1">
             <div class="col"></div>
@@ -26,7 +26,7 @@
             <div class="col"></div>
         </div>
 
-        <div class="row text-center mt--1 mb--1">
+        <div class="row text-center mt--3 mb--3">
             <div class="col"></div>
             <div class="col-10">
                 <h3 class="type--bold">Storm Damage and Insurance Repairs</h3>
@@ -46,14 +46,6 @@
                 <p class="lead">Whether it's deck maintenance, termite damage or door replacement, Maintrade can help
                     you out when things start falling to pieces.  Sometimes there is more damage than meets the eye and
                     with our knowledge and expertise we can find it and fix it fast.
-                </p>
-                <h4 class="type--bold">Tenant & Rental Property damage</h4>
-                <p class="lead">Whether it's a make good situation, complete strip and refit or new commercial fitout, we
-                    are the professionals and pride ourselves on our service and aftersales support.
-                </p >
-                <h4 class="type--bold">Handyman Services</h4>
-                <p class="lead">General property repairs to maintain your investment, make good or we also have
-                    scheduled services to grounds and exteriors.
                 </p>
             </div>
             <div class="col"></div>
