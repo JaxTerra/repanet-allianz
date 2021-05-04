@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <nav id="menu2" class="bar bar-2 hidden-xs">
+        <nav id="menu2" class="bar bar-2 hidden-xs pb-1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 text-center text-left-sm hidden-xs order-lg-2">
@@ -53,6 +53,18 @@
                     </div>
                     <div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
                         <div class="bar__module">
+                            <ul class="menu-horizontal p-0">
+                                <li>
+                                    <a href="{{url('tel:1300503391')}}">
+                                        <i class="fas fa-phone-alt fa-2x text-black"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('https://facebook.com')}}">
+                                        <i class="fab fa-facebook-f fa-2x text-black mr-4"></i>
+                                    </a>
+                                </li>
+                            </ul>
                             <div class="modal-instance">
                                 <a class="btn btn--sm  modal-trigger " href="#">
                                     <span class="btn__text ">
