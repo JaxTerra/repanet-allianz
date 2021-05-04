@@ -34,7 +34,7 @@ class EnquiryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Enquiry $enquiry)
@@ -43,13 +43,17 @@ class EnquiryController extends Controller
 
         Mail::to(env('MAIL_FROM_ADDRESS'))->send(new EnquirySent($enquiry));
 
+        if ($request->ajax()) {
+            return response()->json(200);
+        }
+
         return redirect()->route('homepage')->with('success', 'Message sent successfully!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Enquiry  $enquiry
+     * @param \App\Models\Enquiry $enquiry
      * @return \Illuminate\Http\Response
      */
     public function show(Enquiry $enquiry)
@@ -60,7 +64,7 @@ class EnquiryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Enquiry  $enquiry
+     * @param \App\Models\Enquiry $enquiry
      * @return \Illuminate\Http\Response
      */
     public function edit(Enquiry $enquiry)
@@ -71,8 +75,8 @@ class EnquiryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Enquiry  $enquiry
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Enquiry $enquiry
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Enquiry $enquiry)
@@ -83,7 +87,7 @@ class EnquiryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Enquiry  $enquiry
+     * @param \App\Models\Enquiry $enquiry
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, $id)
