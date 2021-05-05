@@ -18,8 +18,8 @@
                     television and in magazines. Whatever your style, scale or budget we are sure to deliver on point.
                 </p>
                 <h4 class="type--bold">Outdoor entertaining areas & Decking</h4>
-                <p class="lead">Queensland is the outdoor entertaining capital and whether your enjoying drinks or eating
-                    out in your new area with guests or family, your sure to impress with.  From small single level decks
+                <p class="lead">Queensland is the outdoor entertaining capital and whether you're enjoying drinks or eating
+                    out in your new area with guests or family, you're sure to impress with.  From small single level decks
                     to large multi-level entertainment areas, we can design and build to your budget and requirements.
                 </p>
             </div>
