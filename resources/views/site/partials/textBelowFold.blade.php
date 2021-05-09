@@ -33,9 +33,6 @@
                     managed under one company. Specialists in storm response management and repairs from years of
                     experience of working with clients and insurance companies alike.
                 </p>
-                <p class="lead">Our background is in the insurance storm response and triage, with over 20 years in the building
-                    industry and our family business is Queensland owned and operated
-                </p >
                 <p class="lead">From the moment you make contact, or until you sign off on the repairs, our team behind the scenes
                     will keep you informed.
                 </p>
