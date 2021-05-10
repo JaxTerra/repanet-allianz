@@ -36,8 +36,9 @@
                 <p class="lead">From the moment you make contact, or until you sign off on the repairs, our team behind the scenes
                     will keep you informed.
                 </p>
-                <p class="lead">Our goal is to make insurance claims stress free by understanding your situation, delivering quality
-                    workmanship and getting you back to normal living as quickly as possible.
+                <p class="lead">Our goal is to make insurance claims, renovations or remodelling stress free by
+                    understanding your situation, delivering quality workmanship and getting you back to normal living
+                    as quickly as possible.
                 </p>
             </div>
             <div class="col"></div>
